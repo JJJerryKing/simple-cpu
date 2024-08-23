@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_RF_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_RF" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="579000001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="144"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/test_RF/R_Addr_A" type="array">
+      <obj_property name="ElementShortName">R_Addr_A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R_Addr_A[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/R_Addr_B" type="array">
+      <obj_property name="ElementShortName">R_Addr_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R_Addr_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/R_Addr_C" type="array">
+      <obj_property name="ElementShortName">R_Addr_C[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R_Addr_C[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/W_Addr" type="array">
+      <obj_property name="ElementShortName">W_Addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">W_Addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/W_Data" type="array">
+      <obj_property name="ElementShortName">W_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">W_Data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/Write_Reg" type="logic">
+      <obj_property name="ElementShortName">Write_Reg</obj_property>
+      <obj_property name="ObjectShortName">Write_Reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/Write_PC" type="logic">
+      <obj_property name="ElementShortName">Write_PC</obj_property>
+      <obj_property name="ObjectShortName">Write_PC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/PC_New" type="array">
+      <obj_property name="ElementShortName">PC_New[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_New[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/M" type="array">
+      <obj_property name="ElementShortName">M[4:0]</obj_property>
+      <obj_property name="ObjectShortName">M[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/Rst" type="logic">
+      <obj_property name="ElementShortName">Rst</obj_property>
+      <obj_property name="ObjectShortName">Rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/R_Data_A" type="array">
+      <obj_property name="ElementShortName">R_Data_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R_Data_A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/R_Data_B" type="array">
+      <obj_property name="ElementShortName">R_Data_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R_Data_B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/R_Data_C" type="array">
+      <obj_property name="ElementShortName">R_Data_C[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R_Data_C[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/Error1" type="logic">
+      <obj_property name="ElementShortName">Error1</obj_property>
+      <obj_property name="ObjectShortName">Error1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_RF/Error2" type="logic">
+      <obj_property name="ElementShortName">Error2</obj_property>
+      <obj_property name="ObjectShortName">Error2</obj_property>
+   </wvobject>
+</wave_config>

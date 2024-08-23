@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri May 31 17:14:02 2024
+# Process ID: 16228
+# Current directory: E:/Vivado_Project/General_Purpose_RF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28916 E:\Vivado_Project\General_Purpose_RF\General_Purpose_RF.xpr
+# Log file: E:/Vivado_Project/General_Purpose_RF/vivado.log
+# Journal file: E:/Vivado_Project/General_Purpose_RF\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vivado_Project/General_Purpose_RF/General_Purpose_RF.xpr
+update_compile_order -fileset sources_1

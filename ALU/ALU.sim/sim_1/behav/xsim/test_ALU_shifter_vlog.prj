@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ALU.srcs/sources_1/new/ALU.v" \
+"../../../../ALU.srcs/sources_1/new/ALU_shifter.v" \
+"../../../../ALU.srcs/sources_1/new/barrel_shifter_main.v" \
+"../../../../ALU.srcs/sim_1/new/test_ALU_shifter.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

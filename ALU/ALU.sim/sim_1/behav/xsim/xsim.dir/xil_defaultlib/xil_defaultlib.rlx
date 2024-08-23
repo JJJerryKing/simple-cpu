@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU.v,1717514984,verilog,,,,test_ALU,,,,,,,,
+E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v,1717515620,verilog,,,,test_ALU_shifter,,,,,,,,
+E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU.v,1715052137,verilog,,E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v,,ALU,,,,,,,,
+E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v,1716715186,verilog,,E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/barrel_shifter_main.v,,ALU_shifter,,,,,,,,
+E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/barrel_shifter_main.v,1714448636,verilog,,E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v,,barrel_shifter_main,,,,,,,,

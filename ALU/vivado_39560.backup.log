@@ -1,0 +1,468 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May 26 16:03:20 2024
+# Process ID: 39560
+# Current directory: E:/Vivado_Project/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent33788 E:\Vivado_Project\ALU\ALU.xpr
+# Log file: E:/Vivado_Project/ALU/vivado.log
+# Journal file: E:/Vivado_Project/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vivado_Project/ALU/ALU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado_2017.4/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 847.316 ; gain = 89.820
+update_compile_order -fileset sources_1
+file mkdir E:/Vivado_Project/ALU/ALU.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU.v w ]
+add_files -fileset sim_1 E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_shifter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_shifter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/barrel_shifter_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrel_shifter_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6a6e5ba73a154f23a219457a1ab0f493 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_shifter_behav xil_defaultlib.ALU_shifter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net Shift_Out is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:37]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net F is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:38]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 915.242 ; gain = 5.051
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top ALU [current_fileset]
+update_compile_order -fileset sources_1
+set_property top tb_ALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property top test_ALU [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_ALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ALU
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6a6e5ba73a154f23a219457a1ab0f493 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_ALU_behav xil_defaultlib.test_ALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.test_ALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_ALU_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/xsim.dir/test_ALU_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 51.293 ; gain = 0.547
+INFO: [Common 17-206] Exiting Webtalk at Sun May 26 16:39:09 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 923.043 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_ALU_behav -key {Behavioral:sim_1:Functional:test_ALU} -tclbatch {test_ALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_ALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ALU_OP: AND, A: a5a5a5a5, B: 5a5a5a5a, F: 00000000, NZCV: 0100
+ALU_OP: XOR, A: a5a5a5a5, B: 5a5a5a5a, F: ffffffff, NZCV: 1000
+ALU_OP: SUB, A: a5a5a5a5, B: 5a5a5a5a, F: 4b4b4b4b, NZCV: 0011
+ALU_OP: SUB, A: a5a5a5a5, B: 5a5a5a5a, F: b4b4b4b5, NZCV: 1001
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: ffffffff, NZCV: 1000
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: ffffffff, NZCV: 1000
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: 4b4b4b4a, NZCV: 0011
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: b4b4b4b4, NZCV: 1001
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: a5a5a5a5, NZCV: 1000
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: 4b4b4b4f, NZCV: 0011
+ALU_OP: OR, A: a5a5a5a5, B: 5a5a5a5a, F: ffffffff, NZCV: 1000
+ALU_OP: OR, A: a5a5a5a5, B: 5a5a5a5a, F: 5a5a5a5a, NZCV: 0000
+ALU_OP: OR, A: a5a5a5a5, B: 5a5a5a5a, F: a5a5a5a5, NZCV: 1000
+ALU_OP: NOT B, A: a5a5a5a5, B: 5a5a5a5a, F: a5a5a5a5, NZCV: 1000
+ALU_OP: AND, A: a5a5a5a5, B: 5a5a5a5a, F: 00000000, NZCV: 0110
+ALU_OP: XOR, A: a5a5a5a5, B: 5a5a5a5a, F: ffffffff, NZCV: 1010
+ALU_OP: SUB, A: a5a5a5a5, B: 5a5a5a5a, F: 4b4b4b4b, NZCV: 0011
+ALU_OP: SUB, A: a5a5a5a5, B: 5a5a5a5a, F: b4b4b4b5, NZCV: 1001
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: ffffffff, NZCV: 1000
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: 00000000, NZCV: 0110
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: 4b4b4b4b, NZCV: 0011
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: b4b4b4b5, NZCV: 1001
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: a5a5a5a5, NZCV: 1010
+ALU_OP: ADD, A: a5a5a5a5, B: 5a5a5a5a, F: 4b4b4b4f, NZCV: 0011
+ALU_OP: OR, A: a5a5a5a5, B: 5a5a5a5a, F: ffffffff, NZCV: 1010
+ALU_OP: OR, A: a5a5a5a5, B: 5a5a5a5a, F: 5a5a5a5a, NZCV: 0010
+ALU_OP: OR, A: a5a5a5a5, B: 5a5a5a5a, F: a5a5a5a5, NZCV: 1010
+ALU_OP: NOT B, A: a5a5a5a5, B: 5a5a5a5a, F: a5a5a5a5, NZCV: 1010
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_ALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 936.664 ; gain = 13.621
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v w ]
+add_files -fileset sim_1 E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v
+update_compile_order -fileset sim_1
+set_property top ALU_shifter [current_fileset]
+update_compile_order -fileset sources_1
+set_property top test_ALU_shifter [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_ALU_shifter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_ALU_shifter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ALU_shifter
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6a6e5ba73a154f23a219457a1ab0f493 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_ALU_shifter_behav xil_defaultlib.test_ALU_shifter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net Shift_Out is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:37]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net F is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:38]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 947.539 ; gain = 0.641
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_ALU_shifter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_ALU_shifter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/barrel_shifter_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrel_shifter_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ALU_shifter
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6a6e5ba73a154f23a219457a1ab0f493 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_ALU_shifter_behav xil_defaultlib.test_ALU_shifter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net Shift_Out is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:37]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net F is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:38]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 948.383 ; gain = 0.418
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_ALU_shifter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_ALU_shifter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/barrel_shifter_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrel_shifter_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ALU_shifter
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6a6e5ba73a154f23a219457a1ab0f493 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_ALU_shifter_behav xil_defaultlib.test_ALU_shifter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net Shift_Out is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:37]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net F is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:38]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 949.805 ; gain = 0.129
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_ALU_shifter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_ALU_shifter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/barrel_shifter_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrel_shifter_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ALU_shifter
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6a6e5ba73a154f23a219457a1ab0f493 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_ALU_shifter_behav xil_defaultlib.test_ALU_shifter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net F is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:38]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 953.703 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_ALU_shifter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_ALU_shifter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/barrel_shifter_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrel_shifter_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ALU_shifter
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6a6e5ba73a154f23a219457a1ab0f493 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_ALU_shifter_behav xil_defaultlib.test_ALU_shifter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port Carry_Flag on this module [E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v:39]
+ERROR: [VRFC 10-2063] Module <barrel_shifter_main> not found while processing module instance <shifter_instance> [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:36]
+ERROR: [VRFC 10-2063] Module <ALU> not found while processing module instance <alu_instance> [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 955.707 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_ALU_shifter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_ALU_shifter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/barrel_shifter_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrel_shifter_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ALU_shifter
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6a6e5ba73a154f23a219457a1ab0f493 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_ALU_shifter_behav xil_defaultlib.test_ALU_shifter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net F is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 955.707 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_ALU_shifter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_ALU_shifter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/barrel_shifter_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrel_shifter_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ALU_shifter
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6a6e5ba73a154f23a219457a1ab0f493 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_ALU_shifter_behav xil_defaultlib.test_ALU_shifter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net NZCV is not permitted [E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 955.707 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_ALU_shifter' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_ALU_shifter_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sources_1/new/barrel_shifter_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrel_shifter_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ALU/ALU.srcs/sim_1/new/test_ALU_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_ALU_shifter
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6a6e5ba73a154f23a219457a1ab0f493 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_ALU_shifter_behav xil_defaultlib.test_ALU_shifter xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.barrel_shifter_main
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_shifter
+Compiling module xil_defaultlib.test_ALU_shifter
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_ALU_shifter_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim/xsim.dir/test_ALU_shifter_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun May 26 17:20:02 2024...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 958.793 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_ALU_shifter_behav -key {Behavioral:sim_1:Functional:test_ALU_shifter} -tclbatch {test_ALU_shifter.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_ALU_shifter.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_ALU_shifter_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 964.781 ; gain = 5.988
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 965.168 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 965.168 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 26 17:21:23 2024...

@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu May 30 21:58:41 2024
+# Process ID: 24620
+# Current directory: E:/Vivado_Project/General_Purpose_RF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20404 E:\Vivado_Project\General_Purpose_RF\General_Purpose_RF.xpr
+# Log file: E:/Vivado_Project/General_Purpose_RF/vivado.log
+# Journal file: E:/Vivado_Project/General_Purpose_RF\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vivado_Project/General_Purpose_RF/General_Purpose_RF.xpr
+update_compile_order -fileset sources_1
+file mkdir E:/Vivado_Project/General_Purpose_RF/General_Purpose_RF.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/Vivado_Project/General_Purpose_RF/General_Purpose_RF.srcs/sim_1/new/test_RF.v w ]
+add_files -fileset sim_1 E:/Vivado_Project/General_Purpose_RF/General_Purpose_RF.srcs/sim_1/new/test_RF.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_RF [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source test_RF.tcl
+close_sim
+launch_simulation
+source test_RF.tcl
+add_bp {E:/Vivado_Project/General_Purpose_RF/General_Purpose_RF.srcs/sim_1/new/test_RF.v} 139
+remove_bps -file {E:/Vivado_Project/General_Purpose_RF/General_Purpose_RF.srcs/sim_1/new/test_RF.v} -line 139
+add_bp {E:/Vivado_Project/General_Purpose_RF/General_Purpose_RF.srcs/sim_1/new/test_RF.v} 139
+remove_bps -file {E:/Vivado_Project/General_Purpose_RF/General_Purpose_RF.srcs/sim_1/new/test_RF.v} -line 139
+close_sim
+launch_simulation
+source test_RF.tcl
+close_sim
+launch_simulation
+source test_RF.tcl
+close_sim
+launch_simulation
+source test_RF.tcl
+close_sim
+launch_simulation
+source test_RF.tcl
+close_sim
+launch_simulation
+source test_RF.tcl
+close_sim

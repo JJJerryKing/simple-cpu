@@ -1,0 +1,91 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 21552
+License: Customer
+
+Current time: 	Tue May 14 10:18:05 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 1707x1067
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 50 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Vivado_2017.4/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	D:/Vivado_2017.4/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	lenovo
+User home directory: C:/Users/lenovo
+User working directory: E:/Vivado_Project/ALU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado_2017.4/Vivado
+HDI_APPROOT: D:/Vivado_2017.4/Vivado/2017.4
+RDI_DATADIR: D:/Vivado_2017.4/Vivado/2017.4/data
+RDI_BINDIR: D:/Vivado_2017.4/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	D:/Vivado_2017.4/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	E:/Vivado_Project/ALU/vivado.log
+Vivado journal file location: 	E:/Vivado_Project/ALU/vivado.jou
+Engine tmp dir: 	E:/Vivado_Project/ALU/.Xil/Vivado-21552-LAPTOP-3NMIVV38
+
+GUI allocated memory:	198 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 569 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 50 MB (+49974kb) [00:00:09]
+// [Engine Memory]: 497 MB (+369703kb) [00:00:09]
+// Opening Vivado Project: E:\Vivado_Project\ALU\ALU.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/Vivado_Project/ALU/ALU.xpr 
+// [GUI Memory]: 62 MB (+9699kb) [00:00:10]
+// [Engine Memory]: 526 MB (+4278kb) [00:00:10]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project E:/Vivado_Project/ALU/ALU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 74 MB (+9223kb) [00:00:13]
+// [Engine Memory]: 599 MB (+49143kb) [00:00:13]
+// [GUI Memory]: 89 MB (+11982kb) [00:00:14]
+// [Engine Memory]: 631 MB (+1712kb) [00:00:14]
+// [GUI Memory]: 108 MB (+15520kb) [00:00:15]
+// [Engine Memory]: 671 MB (+8975kb) [00:00:15]
+// [GUI Memory]: 114 MB (+66kb) [00:00:15]
+// [GUI Memory]: 121 MB (+2075kb) [00:00:16]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado_2017.4/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 40 MB. Current time: 5/14/24 10:18:10 AM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 856.793 ; gain = 101.457 
+// Project name: ALU; location: E:/Vivado_Project/ALU; part: xc7a100tfgg484-2L
+// [Engine Memory]: 732 MB (+28642kb) [00:00:17]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED

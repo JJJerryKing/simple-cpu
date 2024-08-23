@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun 18 19:10:07 2024
+# Process ID: 16804
+# Current directory: E:/Vivado_Project/barrel_shifter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent37412 E:\Vivado_Project\barrel_shifter\barrel_shifter.xpr
+# Log file: E:/Vivado_Project/barrel_shifter/vivado.log
+# Journal file: E:/Vivado_Project/barrel_shifter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vivado_Project/barrel_shifter/barrel_shifter.xpr
+update_compile_order -fileset sources_1

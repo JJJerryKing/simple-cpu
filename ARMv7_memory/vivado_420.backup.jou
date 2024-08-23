@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri May 31 23:02:42 2024
+# Process ID: 420
+# Current directory: E:/Vivado_Project/ARMv7_memory
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25708 E:\Vivado_Project\ARMv7_memory\ARMv7_memory.xpr
+# Log file: E:/Vivado_Project/ARMv7_memory/vivado.log
+# Journal file: E:/Vivado_Project/ARMv7_memory\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vivado_Project/ARMv7_memory/ARMv7_memory.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source test_memory.tcl
+close_sim
+launch_simulation
+source test_memory.tcl
+close_sim

@@ -1,0 +1,1365 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri May 31 16:23:48 2024
+# Process ID: 17768
+# Current directory: E:/Vivado_Project/ARMv7_memory
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28092 E:\Vivado_Project\ARMv7_memory\ARMv7_memory.xpr
+# Log file: E:/Vivado_Project/ARMv7_memory/vivado.log
+# Journal file: E:/Vivado_Project/ARMv7_memory\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vivado_Project/ARMv7_memory/ARMv7_memory.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado_2017.4/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 853.395 ; gain = 98.430
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2L
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+file mkdir E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v w ]
+add_files -fileset sim_1 E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net M_R_Data_in is not permitted [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v:42]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1135.332 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net M_R_Data_in is not permitted [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v:42]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 1139.711 ; gain = 4.379
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/xsim.dir/test_memory_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 51.516 ; gain = 1.215
+INFO: [Common 17-206] Exiting Webtalk at Fri May 31 17:10:05 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1139.711 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:26 . Memory (MB): peak = 1150.852 ; gain = 11.141
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1155.922 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1155.922 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net M_R_Data_in is not permitted [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v:42]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1156.211 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net M_R_Data_in is not permitted [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v:42]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1156.211 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1157.750 ; gain = 1.539
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port Mem_Addr [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v:39]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1161.430 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port Mem_Addr [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v:39]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1166.473 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port Mem_Addr [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v:39]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1166.473 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port Mem_Addr [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v:39]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1167.246 ; gain = 0.023
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Operating_Mode_A {WRITE_FIRST} CONFIG.Fill_Remaining_Memory_Locations {false}] [get_ips RAM_B]
+generate_target all [get_files  E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/RAM_B.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'RAM_B'...
+catch { config_ip_cache -export [get_ips -all RAM_B] }
+export_ip_user_files -of_objects [get_files E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/RAM_B.xci] -no_script -sync -force -quiet
+reset_run RAM_B_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Vivado_Project/ARMv7_memory/ARMv7_memory.runs/RAM_B_synth_1
+
+launch_runs -jobs 8 RAM_B_synth_1
+[Fri May 31 17:45:14 2024] Launched RAM_B_synth_1...
+Run output will be captured here: E:/Vivado_Project/ARMv7_memory/ARMv7_memory.runs/RAM_B_synth_1/runme.log
+export_simulation -of_objects [get_files E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/RAM_B.xci] -directory E:/Vivado_Project/ARMv7_memory/ARMv7_memory.ip_user_files/sim_scripts -ip_user_files_dir E:/Vivado_Project/ARMv7_memory/ARMv7_memory.ip_user_files -ipstatic_source_dir E:/Vivado_Project/ARMv7_memory/ARMv7_memory.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Vivado_Project/ARMv7_memory/ARMv7_memory.cache/compile_simlib/modelsim} {questa=E:/Vivado_Project/ARMv7_memory/ARMv7_memory.cache/compile_simlib/questa} {riviera=E:/Vivado_Project/ARMv7_memory/ARMv7_memory.cache/compile_simlib/riviera} {activehdl=E:/Vivado_Project/ARMv7_memory/ARMv7_memory.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port Mem_Addr [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v:39]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1217.273 ; gain = 0.000
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Operating_Mode_A {READ_FIRST}] [get_ips RAM_B]
+generate_target all [get_files  E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/RAM_B.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'RAM_B'...
+catch { config_ip_cache -export [get_ips -all RAM_B] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP RAM_B, cache-ID = ea56c68f273035c1; cache size = 0.293 MB.
+catch { [ delete_ip_run [get_ips -all RAM_B] ] }
+INFO: [Project 1-386] Moving file 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/RAM_B.xci' from fileset 'RAM_B' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/RAM_B.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/RAM_B.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/RAM_B.xci'
+export_simulation -of_objects [get_files E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/RAM_B.xci] -directory E:/Vivado_Project/ARMv7_memory/ARMv7_memory.ip_user_files/sim_scripts -ip_user_files_dir E:/Vivado_Project/ARMv7_memory/ARMv7_memory.ip_user_files -ipstatic_source_dir E:/Vivado_Project/ARMv7_memory/ARMv7_memory.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Vivado_Project/ARMv7_memory/ARMv7_memory.cache/compile_simlib/modelsim} {questa=E:/Vivado_Project/ARMv7_memory/ARMv7_memory.cache/compile_simlib/questa} {riviera=E:/Vivado_Project/ARMv7_memory/ARMv7_memory.cache/compile_simlib/riviera} {activehdl=E:/Vivado_Project/ARMv7_memory/ARMv7_memory.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port Mem_Addr [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v:39]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1332.594 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port Mem_Addr [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v:39]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1332.594 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port Mem_Addr [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v:39]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.594 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 6 differs from formal bit length 8 for port Mem_Addr [E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v:39]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1332.594 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1332.594 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1332.594 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.594 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1332.594 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado_2017.4/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_memory' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/store_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_memory_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARMv7_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado_2017.4/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d074a38801194a229cb58b7ea1b56716 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_memory_behav xil_defaultlib.test_memory xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.ARMv7_memory
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_memory_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_memory_behav -key {Behavioral:sim_1:Functional:test_memory} -tclbatch {test_memory.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_memory.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module test_memory.uut.RAM1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_memory_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1332.594 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 22:50:35 2024...

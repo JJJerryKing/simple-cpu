@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/Vivado_Project/ARMv7_memory/ARMv7_memory.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v,1717471519,verilog,,,,test_memory,,,,,,,,
+E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/ip/RAM_B/sim/RAM_B.v,1717471539,verilog,,E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v,,RAM_B,,,,,,,,
+E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sources_1/new/ARMv7_memory.v,1717467428,verilog,,E:/Vivado_Project/ARMv7_memory/ARMv7_memory.srcs/sim_1/new/test_memory.v,,ARMv7_memory,,,,,,,,
