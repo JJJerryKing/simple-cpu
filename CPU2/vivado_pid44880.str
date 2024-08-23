@@ -1,0 +1,158 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 44880
+License: Customer
+
+Current time: 	Thu Jun 06 21:45:32 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 1707x1067
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 44 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Vivado_2017.4/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	D:/Vivado_2017.4/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	lenovo
+User home directory: C:/Users/lenovo
+User working directory: E:/Vivado_Project/CPU2
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado_2017.4/Vivado
+HDI_APPROOT: D:/Vivado_2017.4/Vivado/2017.4
+RDI_DATADIR: D:/Vivado_2017.4/Vivado/2017.4/data
+RDI_BINDIR: D:/Vivado_2017.4/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	D:/Vivado_2017.4/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	E:/Vivado_Project/CPU2/vivado.log
+Vivado journal file location: 	E:/Vivado_Project/CPU2/vivado.jou
+Engine tmp dir: 	E:/Vivado_Project/CPU2/.Xil/Vivado-44880-LAPTOP-3NMIVV38
+
+GUI allocated memory:	193 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 564 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 50 MB (+49741kb) [00:00:10]
+// [Engine Memory]: 499 MB (+372251kb) [00:00:10]
+// Opening Vivado Project: E:\Vivado_Project\CPU2\CPU2.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/Vivado_Project/CPU2/CPU2.xpr 
+// [GUI Memory]: 62 MB (+9774kb) [00:00:11]
+// [Engine Memory]: 526 MB (+1943kb) [00:00:11]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 74 MB (+10021kb) [00:00:15]
+// [Engine Memory]: 601 MB (+50363kb) [00:00:15]
+// [GUI Memory]: 88 MB (+10639kb) [00:00:15]
+// [GUI Memory]: 109 MB (+17297kb) [00:00:16]
+// [Engine Memory]: 652 MB (+22613kb) [00:00:16]
+// [GUI Memory]: 115 MB (+22kb) [00:00:17]
+// Tcl Message: open_project E:/Vivado_Project/CPU2/CPU2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado_2017.4/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 40 MB. Current time: 6/6/24 9:45:37 PM CST
+// Project name: CPU2; location: E:/Vivado_Project/CPU2; part: xc7a100tfgg484-2L
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 831.605 ; gain = 63.875 
+// [Engine Memory]: 691 MB (+6348kb) [00:00:19]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 2); // B (D, cj)
+// PAPropertyPanels.initPanels (CPU2.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v)]", 1, true); // B (D, cj) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v), controller : Controller (Controller.v)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v), LD : LD (LD.v)]", 2, true); // B (D, cj) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v), LD : LD (LD.v)]", 2); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v), LD : LD (LD.v), instROMInst : InstROM (InstROM.xci)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v), LD : LD (LD.v), instROMInst : InstROM (InstROM.xci)]", 3, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// N (cj):  Re-customize IP : addNotify
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tfgg484-2L 
+// [Engine Memory]: 790 MB (+67447kb) [00:00:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 839 MB. GUI used memory: 41 MB. Current time: 6/6/24 9:45:59 PM CST
+// [Engine Memory]: 965 MB (+141745kb) [00:00:42]
+// r (cj): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // N (cj)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bb (C, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (C, r)
+setFileChooser("E:/Vivado_Project/CPU2/test.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+selectCheckBox((HResource) null, "Load Init File", false); // g (l, r): FALSE
+selectCheckBox((HResource) null, "Load Init File", true); // g (l, r): TRUE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bb (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bb (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bb (C, r)
+dismissDialog("Re-customize IP"); // r (cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v), LD : LD (LD.v), instROMInst : InstROM (InstROM.xci)]", 3, false, false, false, false, true, false); // B (D, cj) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v), LD : LD (LD.v), instROMInst : InstROM (InstROM.xci)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v), LD : LD (LD.v), instROMInst : InstROM (InstROM.xci)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CPU2 (CPU2.v), LD : LD (LD.v), instROMInst : InstROM (InstROM.xci)]", 3, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (cj): Re-customize IP: addNotify
+// TclEventType: RUN_COMPLETED
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bb (C, r)
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (C, r)
+// Elapsed time: 11 seconds
+setFileChooser("E:/Vivado_Project/CPU2/test.coe");
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_EDIT, "Edit"); // a (C, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Re-customize IP"); // r (cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, test_CPU2.coe]", 9, false, false, false, false, true, false); // B (D, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files e:/Vivado_Project/CPU3/test_CPU2.coe] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  e:/Vivado_Project/CPU3/test_CPU2.coe 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, test_CPU2.coe]", 9, false, false, false, false, true, false); // B (D, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: remove_files  e:/Vivado_Project/CPU3/test_CPU2.coe 
+// [GUI Memory]: 128 MB (+8416kb) [00:01:54]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 136 MB (+1486kb) [00:01:57]
+// [GUI Memory]: 144 MB (+1008kb) [00:01:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 988 MB. GUI used memory: 60 MB. Current time: 6/6/24 9:47:19 PM CST

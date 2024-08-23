@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CPU2.srcs/sources_1/ip/InstROM/sim/InstROM.v" \
+"../../../../CPU2.srcs/sources_1/new/ALU.v" \
+"../../../../CPU2.srcs/sources_1/new/ALU_shifter.v" \
+"../../../../CPU2.srcs/sources_1/new/CPU2.v" \
+"../../../../CPU2.srcs/sources_1/new/Controller.v" \
+"../../../../CPU2.srcs/sources_1/new/General_Purpose_RF.v" \
+"../../../../CPU2.srcs/sources_1/new/LD.v" \
+"../../../../CPU2.srcs/sources_1/new/barrel_shifter_main.v" \
+"../../../../CPU2.srcs/sim_1/new/test1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

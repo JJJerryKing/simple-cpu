@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jun  7 18:18:57 2024
+# Process ID: 37492
+# Current directory: E:/Vivado_Project/CPU3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent62324 E:\Vivado_Project\CPU3\CPU3.xpr
+# Log file: E:/Vivado_Project/CPU3/vivado.log
+# Journal file: E:/Vivado_Project/CPU3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Vivado_Project/CPU3/CPU3.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+source test_CPU3.tcl
+close_sim
+launch_simulation
+source test_CPU3.tcl
+close_sim
+launch_simulation
+source test_CPU3.tcl
+close_sim
+launch_simulation
+source test_CPU3.tcl
+close_sim
+launch_simulation
+launch_simulation
+source test_CPU3.tcl
+close_sim
+launch_simulation
+source test_CPU3.tcl
+close_sim
+launch_simulation
+source test_CPU3.tcl
+run 10 us
+close_sim
+launch_simulation
+source test_CPU3.tcl
+run 10 us
+close_sim

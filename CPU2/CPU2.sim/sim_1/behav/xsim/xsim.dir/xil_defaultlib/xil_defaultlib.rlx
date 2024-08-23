@@ -1,0 +1,16 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/Vivado_Project/CPU2/CPU2.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sim_1/new/test1.v,1717570268,verilog,,,,test_CPU1,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sim_1/new/test_CPU2.v,1717588626,verilog,,,,test_CPU2,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/ip/InstROM/sim/InstROM.v,1717681876,verilog,,E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/ALU.v,,InstROM,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/ALU.v,1717170302,verilog,,E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/ALU_shifter.v,,ALU,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/ALU_shifter.v,1717585091,verilog,,E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/CPU2.v,,ALU_shifter,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/CPU2.v,1717588646,verilog,,E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/Controller.v,,CPU2,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/Controller.v,1717585332,verilog,,E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/General_Purpose_RF.v,,Controller,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/DataPass.v,1717520319,verilog,,E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/General_Purpose_RF.v,,DataPass,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/General_Purpose_RF.v,1717072585,verilog,,E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/LD.v,,General_Purpose_RF,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/LD.v,1717588304,verilog,,E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/barrel_shifter_main.v,,LD,,,,,,,,
+E:/Vivado_Project/CPU2/CPU2.srcs/sources_1/new/barrel_shifter_main.v,1714448636,verilog,,E:/Vivado_Project/CPU2/CPU2.srcs/sim_1/new/test_CPU2.v,,barrel_shifter_main,,,,,,,,
