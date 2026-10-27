@@ -1,4 +1,4 @@
-# Simple CPU — Icarus Verilog 仿真版
+# Simple CPU
 
 ## 项目简介
 
