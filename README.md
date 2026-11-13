@@ -1,5 +1,5 @@
 # simple-cpu
-HDU 计算机组成原理实验
+HDU 计算机组成原理实验（vivado实现，iverilog分支使用iverilog+vvp环境实现）
 ## 说明
 * 基于ARMv7架构
 * 仅实现vivado波形图仿真，无板级验证
